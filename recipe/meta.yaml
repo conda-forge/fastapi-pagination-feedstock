@@ -1,5 +1,6 @@
 {% set name = "fastapi-pagination" %}
 {% set version = "0.12.34" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -9,19 +10,18 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastapi_pagination-{{ version }}.tar.gz
   sha256: 05ee8c0bc572072160f7f30900bfd87869e1880c87bc5797922fec2e49e65f11
 
-
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.8,<4.0
+    - python >={{ python_min }},<4.0
     - pydantic >=1.9.1
     - fastapi >=0.93.0
   run_constrained:
@@ -49,6 +49,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/uriyyo/fastapi-pagination
