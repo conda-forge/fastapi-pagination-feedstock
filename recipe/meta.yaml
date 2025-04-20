@@ -9,6 +9,7 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastapi_pagination-{{ version }}.tar.gz
   sha256: 05ee8c0bc572072160f7f30900bfd87869e1880c87bc5797922fec2e49e65f11
 
+
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
