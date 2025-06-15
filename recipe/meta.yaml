@@ -1,6 +1,5 @@
 {% set name = "fastapi-pagination" %}
 {% set version = "0.13.0" %}
-{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
