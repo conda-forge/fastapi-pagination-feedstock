@@ -1,6 +1,6 @@
 {% set name = "fastapi-pagination" %}
 {% set version = "0.13.1" %}
-{% set python_min = "3.8" %}
+
 
 package:
   name: {{ name|lower }}
@@ -10,6 +10,7 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastapi_pagination-{{ version }}.tar.gz
   sha256: f7ca4f4bdcd1a82eb8ee6e5788d9c158e913bba2e013c261946267ee9d79143a
 
+
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
@@ -18,7 +19,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.0.0
+    - hatchling
     - pip
   run:
     - python >={{ python_min }},<4.0
