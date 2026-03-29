@@ -1,5 +1,5 @@
 {% set name = "fastapi-pagination" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastapi_pagination-{{ version }}.tar.gz
-  sha256: e576800270f2714c781241b66c11f5da24f6671670edc122f5be7e4c2bd7f353
+  sha256: d045f8c678cef69ac006236f32a6d808ae6ca549360f79e92eefe2528f3e6337
 
 
 build:
