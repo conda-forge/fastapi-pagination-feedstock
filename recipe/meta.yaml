@@ -1,5 +1,5 @@
 {% set name = "fastapi-pagination" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.12" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastapi_pagination-{{ version }}.tar.gz
-  sha256: d045f8c678cef69ac006236f32a6d808ae6ca549360f79e92eefe2528f3e6337
+  sha256: 914b41e07b8556de34c12d3568c9b7137eb62a3558420061a4acbebf7e729a08
 
 
 build:
@@ -31,19 +31,19 @@ requirements:
     - orm >=0.3.1
     - tortoise-orm >=0.22.0
     - asyncpg >=0.24.0
-    - odmantic >=1.0.2,<2
+    - odmantic >=1.0.2
     - django <6.0.0
-    - piccolo >=0.89,<1.25
-    - motor >=3.6.0,<4.0.0
-    - mongoengine >=0.23.1,<0.30.0
+    - piccolo >=0.89
+    - motor >=3.6.0
+    - mongoengine >=0.23.1
     - sqlmodel >=0.0.22
-    - pony >=0.7.16,<0.8.0
+    - pony >=0.7.16
     - beanie >=1.25.0
-    - sqlakeyset >=2.0.1680321678,<3.0.0
-    - scylla-driver >=3.25.6,<4
-    - bunnet >=1.1.0,<2.0.0
-    - elasticsearch-dsl >=8.13.0,<9
-    - google-cloud-firestore >=2.19.0,<3
+    - sqlakeyset >=2.0.1680321678
+    - scylla-driver >=3.25.6
+    - bunnet >=1.1.0
+    - elasticsearch-dsl >=8.13.0
+    - google-cloud-firestore >=2.19.0
 
 test:
   imports:
